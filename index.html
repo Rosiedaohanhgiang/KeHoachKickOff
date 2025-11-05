@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="vi"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế Hoạch Khởi Động Dự Án | Hoan TT &amp; Build Talents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-orange: #FF9800;
+            --color-green: #009688;
+            --color-blue-light: #5C6BC0;
+            --color-blue-dark: #1a237e;
+        }
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .tab-active {
+            background-color: var(--color-orange) !important;
+            color: white !important;
+            border-bottom-color: transparent !important;
+        }
+        .tab-inactive {
+            background-color: white;
+            color: var(--color-blue-dark);
+            border-bottom: 4px solid transparent;
+        }
+        .content-panel {
+            display: none;
+        }
+        .content-panel.active {
+            display: block;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 32px;
+            left: -16px;
+            width: 2px;
+            height: calc(100% + 32px);
+            background-color: var(--color-blue-light);
+        }
+        .timeline-item:last-child::before {
+            height: 0;
+        }
+        .timeline-decorator {
+            position: absolute;
+            top: 24px;
+            left: -24px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: white;
+            border: 4px solid var(--color-blue-light);
+        }
+    </style>
+<script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.3f7572448765332f3047.js"></script></head>
+<body class="antialiased">
+
+    <div class="min-h-screen p-4 sm:p-6 lg:p-8 font-oswald">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- HEADER -->
+            <header class="text-center mb-8">
+                <h1 class="text-4xl md:text-6xl font-bold text-[var(--color-blue-dark)] uppercase tracking-wider">Kế Hoạch Khởi Động Dự Án</h1>
+                <p class="text-xl md:text-2xl text-[var(--color-blue-light)] mt-2 font-light">Kiến tạo hành trình chuyển đổi hệ thống nhân sự cùng Hoan TT &amp; Build Talents</p>
+            </header>
+
+            <!-- TABS NAVIGATION -->
+            <div class="mb-8">
+                <div class="grid grid-cols-3 gap-1 md:gap-2 max-w-4xl mx-auto bg-gray-200 p-1 rounded-xl">
+                    <button data-tab="phase1" class="tab-button tab-active text-sm sm:text-lg font-semibold py-3 px-2 rounded-lg transition-colors duration-300">
+                        GĐ 1: CHUẨN BỊ (TRƯỚC)
+                    </button>
+                    <button data-tab="phase2" class="tab-button tab-inactive text-sm sm:text-lg font-semibold py-3 px-2 rounded-lg transition-colors duration-300">
+                        GĐ 2: THỰC THI (TRONG)
+                    </button>
+                    <button data-tab="phase3" class="tab-button tab-inactive text-sm sm:text-lg font-semibold py-3 px-2 rounded-lg transition-colors duration-300">
+                        GĐ 3: DUY TRÌ (SAU)
+                    </button>
+                </div>
+            </div>
+
+            <!-- CONTENT PANELS -->
+            <main>
+                <!-- GIAI ĐOẠN 1: TRƯỚC KICK-OFF -->
+                <div id="phase1" class="content-panel active">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-[var(--color-blue-dark)]">GIAI ĐOẠN 1: CÔNG TÁC CHUẨN BỊ</h2>
+                        <p class="text-lg text-gray-600 mt-1">Thống nhất thông điệp lãnh đạo và hoàn tất công tác hậu cần để đảm bảo một khởi đầu hoàn hảo.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Card 1: Leadership Alignment -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[var(--color-orange)] transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-orange)] bg-opacity-10 mx-auto mb-4">
+                                <svg class="h-8 w-8 text-[var(--color-orange)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-6.75 3h9m-9 3h9M3.375 21h17.25c1.035 0 1.875-.84 1.875-1.875V4.875c0-1.035-.84-1.875-1.875-1.875H3.375c-1.035 0-1.875.84-1.875 1.875v14.25c0 1.035.84 1.875 1.875 1.875z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">THỐNG NHẤT TẦM NHÌN LÃNH ĐẠO</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm">Họp 60 phút giữa Ban Giám đốc Hoan TT &amp; Build Talents để đồng bộ 100% về thông điệp, lợi ích và cách xử lý các câu hỏi khó. <strong class="text-[var(--color-blue-dark)]">Sự đồng nhất là yếu tố tiên quyết.</strong></p>
+                        </div>
+                        <!-- Card 2: Project Team -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[var(--color-green)] transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-green)] bg-opacity-10 mx-auto mb-4">
+                                <svg class="h-8 w-8 text-[var(--color-green)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962A3 3 0 0110.5 9.75v-.75a3 3 0 00-3-3h-1.5a3 3 0 00-3 3v.75a3 3 0 013 3v.75a3 3 0 003 3h.75a3 3 0 003-3v-.75a3 3 0 013-3h.75a3 3 0 013 3v.75a3 3 0 003 3h.75a3 3 0 003-3v-.75a3 3 0 01-3-3h-1.5a3 3 0 01-3 3v.75a3 3 0 003 3h.75a3 3 0 003-3v-.75a3 3 0 01-3-3h-.75a3 3 0 01-3 3v.75a3 3 0 003 3h.75a3 3 0 003-3z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">KIẾN TẠO ĐỘI NGŨ TIÊN PHONG</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm">Bà Hoàn chỉ định <strong class="text-[var(--color-blue-dark)]">Ban Dự án Nội bộ</strong>. Đây là những đầu mối liên lạc, đối tác trực tiếp của Build Talents trong suốt dự án, đảm bảo sự phối hợp nhịp nhàng.</p>
+                        </div>
+                        <!-- Card 3: Logistics -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[var(--color-blue-light)] transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-blue-light)] bg-opacity-10 mx-auto mb-4">
+                               <svg class="h-8 w-8 text-[var(--color-blue-light)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h4.5M12 3v12"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">HOÀN THIỆN CÔNG CỤ &amp; HẬU CẦN</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm"><strong class="text-[var(--color-blue-dark)]">Build Talents:</strong> Chuẩn bị slide &amp; "Tuyên bố Dự án" trực quan. <br><strong class="text-[var(--color-blue-dark)]">Hoan TT:</strong> Ấn định thời gian, địa điểm, thiết bị (máy chiếu, âm thanh, micro).</p>
+                        </div>
+                        <!-- Card 4: Invitation -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-400 transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-400 bg-opacity-10 mx-auto mb-4">
+                                <svg class="h-8 w-8 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">GỬI THƯ MỜI TRÂN TRỌNG</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm">Thư mời được gửi từ <strong class="text-[var(--color-blue-dark)]">Giám đốc (Bà Hoàn)</strong> để thể hiện tầm quan trọng và sự cam kết cao nhất của Ban Lãnh đạo đối với dự án chiến lược này.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIAI ĐOẠN 2: TRONG KICK-OFF -->
+                <div id="phase2" class="content-panel">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold text-[var(--color-blue-dark)]">GIAI ĐOẠN 2: KỊCH BẢN BUỔI KICK-OFF (90 PHÚT)</h2>
+                        <p class="text-lg text-gray-600 mt-1">"Truyền mục tiêu, tầm nhìn và cảm hứng" thông qua một kịch bản được thiết kế chi tiết.</p>
+                    </div>
+
+                    <div class="relative max-w-4xl mx-auto pl-10 md:pl-0">
+                        <!-- Timeline Item 1 -->
+                        <div class="md:grid md:grid-cols-5 md:gap-8 relative timeline-item mb-8">
+                            <div class="md:col-span-1 text-right">
+                                <p class="text-2xl font-bold text-[var(--color-orange)]">10 PHÚT</p>
+                                <p class="text-md text-gray-500">00:00 - 00:10</p>
+                            </div>
+                            <div class="md:col-span-4 bg-white p-6 rounded-xl shadow-lg border-l-4 border-[var(--color-orange)] mt-2 md:mt-0">
+                                <div class="timeline-decorator hidden md:block"></div>
+                                <h3 class="text-xl font-bold text-[var(--color-blue-dark)]">CHÀO ĐÓN &amp; "TẠI SAO LÀ BÂY GIỜ?"</h3>
+                                <p class="font-semibold text-gray-700 mt-2">Người trình bày: <span class="text-[var(--color-blue-light)]">Bà Trần Thị Kim Hoàn</span></p>
+                                <p class="text-gray-600 mt-2 text-sm"><strong class="text-[var(--color-green)]">Mục tiêu:</strong> Thể hiện cam kết cao nhất từ Ban Lãnh đạo. Chia sẻ về tầm nhìn và lý do chiến lược của sự thay đổi này, khơi dậy sự đồng cảm và nhận thức chung.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="md:grid md:grid-cols-5 md:gap-8 relative timeline-item mb-8">
+                            <div class="md:col-span-1 text-right">
+                                <p class="text-2xl font-bold text-[var(--color-orange)]">10 PHÚT</p>
+                                <p class="text-md text-gray-500">00:10 - 00:20</p>
+                            </div>
+                            <div class="md:col-span-4 bg-white p-6 rounded-xl shadow-lg border-l-4 border-[var(--color-orange)] mt-2 md:mt-0">
+                                <div class="timeline-decorator hidden md:block"></div>
+                                <h3 class="text-xl font-bold text-[var(--color-blue-dark)]">GIỚI THIỆU ĐỐI TÁC ĐỒNG HÀNH</h3>
+                                <p class="font-semibold text-gray-700 mt-2">Người trình bày: <span class="text-[var(--color-blue-light)]">Bà Trần Thị Kim Hoàn</span></p>
+                                <p class="text-gray-600 mt-2 text-sm"><strong class="text-[var(--color-green)]">Mục tiêu:</strong> Giới thiệu Build Talents (Bà Giang), xây dựng sự tin tưởng và uy tín cho đơn vị tư vấn, khẳng định sự đầu tư nghiêm túc vào dự án.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="md:grid md:grid-cols-5 md:gap-8 relative timeline-item mb-8">
+                             <div class="md:col-span-1 text-right">
+                                <p class="text-2xl font-bold text-[var(--color-green)]">30 PHÚT</p>
+                                <p class="text-md text-gray-500">00:20 - 00:50</p>
+                            </div>
+                            <div class="md:col-span-4 bg-white p-6 rounded-xl shadow-lg border-l-4 border-[var(--color-green)] mt-2 md:mt-0">
+                                <div class="timeline-decorator hidden md:block"></div>
+                                <h3 class="text-xl font-bold text-[var(--color-blue-dark)]">HÀNH TRÌNH 12 THÁNG: "CHÚNG TA SẼ LÀM GÌ CÙNG NHAU?"</h3>
+                                <p class="font-semibold text-gray-700 mt-2">Người trình bày: <span class="text-[var(--color-blue-light)]">Bà Đào Hạnh Giang</span></p>
+                                <p class="text-gray-600 mt-2 text-sm"><strong class="text-[var(--color-green)]">Mục tiêu:</strong> Trình bày lộ trình dự án 3 giai đoạn một cách trực quan. Đặc biệt, "diễn giải" các sản phẩm phức tạp (Lương 3P, Năng lực, PMS) thành <strong class="text-[var(--color-orange)] uppercase">lợi ích WIIFM (What's In It For Me?)</strong> rõ ràng cho từng nhân viên.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 4 -->
+                        <div class="md:grid md:grid-cols-5 md:gap-8 relative timeline-item mb-8">
+                            <div class="md:col-span-1 text-right">
+                                <p class="text-2xl font-bold text-[var(--color-blue-light)]">15 PHÚT</p>
+                                <p class="text-md text-gray-500">00:50 - 01:05</p>
+                            </div>
+                            <div class="md:col-span-4 bg-white p-6 rounded-xl shadow-lg border-l-4 border-[var(--color-blue-light)] mt-2 md:mt-0">
+                                <div class="timeline-decorator hidden md:block"></div>
+                                <h3 class="text-xl font-bold text-[var(--color-blue-dark)]">QUY TẮC LÀM VIỆC (RULES OF ENGAGEMENT)</h3>
+                                <p class="font-semibold text-gray-700 mt-2">Người trình bày: <span class="text-[var(--color-blue-light)]">Bà Giang &amp; Ban Dự án Hoan TT</span></p>
+                                <p class="text-gray-600 mt-2 text-sm"><strong class="text-[var(--color-green)]">Mục tiêu:</strong> Giới thiệu Ban Dự án nội bộ. Làm rõ vai trò của nhân viên (tham gia khảo sát, phỏng vấn) và nhấn mạnh <strong class="text-[var(--color-orange)] uppercase">cam kết bảo mật thông tin (NDA)</strong> để tạo sự an tâm.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 5 -->
+                        <div class="md:grid md:grid-cols-5 md:gap-8 relative timeline-item mb-8">
+                             <div class="md:col-span-1 text-right">
+                                <p class="text-2xl font-bold text-[var(--color-blue-dark)]">20 PHÚT</p>
+                                <p class="text-md text-gray-500">01:05 - 01:25</p>
+                            </div>
+                            <div class="md:col-span-4 bg-white p-6 rounded-xl shadow-lg border-l-4 border-[var(--color-blue-dark)] mt-2 md:mt-0">
+                                <div class="timeline-decorator hidden md:block"></div>
+                                <h3 class="text-xl font-bold text-[var(--color-blue-dark)]">ĐỐI THOẠI CỞI MỞ (Q&amp;A)</h3>
+                                <p class="font-semibold text-gray-700 mt-2">Người trình bày: <span class="text-[var(--color-blue-light)]">Bà Hoàn &amp; Bà Giang</span></p>
+                                <p class="text-gray-600 mt-2 text-sm"><strong class="text-[var(--color-green)]">Mục tiêu:</strong> Phần quan trọng nhất để giải đáp mọi thắc mắc, xử lý sự "kháng cự" tiềm ẩn. Thể hiện sự <strong class="text-[var(--color-orange)] uppercase">minh bạch và cởi mở</strong>, xây dựng lòng tin tuyệt đối.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 6 -->
+                        <div class="md:grid md:grid-cols-5 md:gap-8 relative timeline-item">
+                            <div class="md:col-span-1 text-right">
+                                <p class="text-2xl font-bold text-[var(--color-orange)]">5 PHÚT</p>
+                                <p class="text-md text-gray-500">01:25 - 01:30</p>
+                            </div>
+                            <div class="md:col-span-4 bg-white p-6 rounded-xl shadow-lg border-l-4 border-[var(--color-orange)] mt-2 md:mt-0">
+                                <div class="timeline-decorator hidden md:block"></div>
+                                <h3 class="text-xl font-bold text-[var(--color-blue-dark)]">TÁI CAM KẾT &amp; KÊU GỌI ĐỒNG HÀNH</h3>
+                                <p class="font-semibold text-gray-700 mt-2">Người trình bày: <span class="text-[var(--color-blue-light)]">Bà Trần Thị Kim Hoàn</span></p>
+                                <p class="text-gray-600 mt-2 text-sm"><strong class="text-[var(--color-green)]">Mục tiêu:</strong> Khẳng định lại niềm tin vào sự thành công của dự án. Kêu gọi toàn thể nhân viên cùng tham gia và thông báo bước đi cụ thể đầu tiên ngay sau buổi họp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIAI ĐOẠN 3: SAU KICK-OFF -->
+                <div id="phase3" class="content-panel">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-[var(--color-blue-dark)]">GIAI ĐOẠN 3: DUY TRÌ ĐÀ PHÁT TRIỂN</h2>
+                        <p class="text-lg text-gray-600 mt-1">Biến năng lượng từ buổi Kick-off thành hành động cụ thể và duy trì nhịp độ dự án.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Card 1: Communication -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[var(--color-orange)] transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-orange)] bg-opacity-10 mx-auto mb-4">
+                                <svg class="h-8 w-8 text-[var(--color-orange)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 18V7.125c0-.621.504-1.125 1.125-1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V6.375z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">TRUYỀN THÔNG NGAY LẬP TỨC</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm"><strong class="text-[var(--color-blue-dark)]">Trong 24 giờ:</strong> Gửi email cảm ơn toàn thể nhân viên. Đính kèm "Tuyên bố Dự án" (bản tóm tắt 1 trang) và slide trình bày để củng cố thông điệp.</p>
+                        </div>
+                        <!-- Card 2: Quick Win -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[var(--color-green)] transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-green)] bg-opacity-10 mx-auto mb-4">
+                                <svg class="h-8 w-8 text-[var(--color-green)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.63 2.18a14.98 14.98 0 00-2.18 6.16m5.84 2.58v-4.8m0 4.8a6 6 0 01-3.36 5.84m-2.48-5.84a14.98 14.98 0 01-2.18-6.16A14.98 14.98 0 019.63 2.18a14.98 14.98 0 016.16 2.18m-2.48 9.98a6 6 0 01-5.84-7.38"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">KHỞI ĐỘNG "QUICK WIN"</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm"><strong class="text-[var(--color-blue-dark)]">Trong Tuần đầu tiên:</strong> Bắt đầu ngay hoạt động đầu tiên (VD: Khảo sát Chẩn đoán, lịch phỏng vấn). <strong class="text-[var(--color-blue-dark)]">Hành động hơn lời nói.</strong></p>
+                        </div>
+                        <!-- Card 3: Project Rhythm -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[var(--color-blue-light)] transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--color-blue-light)] bg-opacity-10 mx-auto mb-4">
+                               <svg class="h-8 w-8 text-[var(--color-blue-light)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M12 12.75h.008v.008H12v-.008z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-center text-[var(--color-blue-dark)]">THIẾT LẬP NHỊP ĐIỆU DỰ ÁN</h3>
+                            <p class="text-gray-600 mt-2 text-center text-sm">Ấn định lịch họp cố định <strong class="text-[var(--color-blue-dark)]">hàng tuần/hàng tháng</strong> (theo Dịch vụ Retainer) để rà soát, đảm bảo tiến độ và giải quyết các vấn đề phát sinh kịp thời.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+                <p class="text-lg font-semibold text-[var(--color-blue-dark)]">Rosie Đào Hạnh Giang</p>
+                <p class="text-md text-gray-500">CEO Build Talents</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contentPanels = document.querySelectorAll('.content-panel');
+
+            // Find the parent of the tabs to use event delegation
+            const tabContainer = tabs[0].parentElement;
+
+            tabContainer.addEventListener('click', function(event) {
+                const clickedTab = event.target.closest('.tab-button');
+                
+                if (!clickedTab) return; // Exit if the click was not on a button
+
+                const tabId = clickedTab.dataset.tab;
+
+                // Update tabs appearance
+                tabs.forEach(tab => {
+                    tab.classList.remove('tab-active');
+                    tab.classList.add('tab-inactive');
+                });
+                clickedTab.classList.add('tab-active');
+                clickedTab.classList.remove('tab-inactive');
+
+                // Update content panels visibility
+                contentPanels.forEach(panel => {
+                    if (panel.id === tabId) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+</body></html>
